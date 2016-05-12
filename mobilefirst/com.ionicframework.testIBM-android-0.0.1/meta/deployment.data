@@ -1,0 +1,11 @@
+#Deployment data.
+# Tue May 10 2016 14:58:12 GMT+0530 (IST)
+app.id=com.ionicframework.testIBM
+app.version=0.0.1
+app.displayname=TestIBM
+app.platform=android
+platform.version=8.0.0.00-20160328-0234
+native.sdk.checksum=209521667
+app.checksum=493546511
+app.unpacked.size=79212
+app.build.time=1462872492573

@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'mfpdev-cli.tgz' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'mfpdev-cli.tgz', null ]
+7 verbose cache add spec mfpdev-cli.tgz
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'mfpdev-cli.tgz',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'mfpdev-cli.tgz',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed mfpdev-cli.tgz@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for mfpdev-cli.tgz
+11 info addNameTag [ 'mfpdev-cli.tgz', 'latest' ]
+12 silly mapToRegistry name mfpdev-cli.tgz
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'mfpdev-cli.tgz',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'mfpdev-cli.tgz',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/mfpdev-cli.tgz
+17 verbose addNameTag registry:https://registry.npmjs.org/mfpdev-cli.tgz not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/mfpdev-cli.tgz
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 2:03:31 PM
+21 verbose request id ee6b4d90960c68fa
+22 http request GET https://registry.npmjs.org/mfpdev-cli.tgz
+23 http 500 https://registry.npmjs.org/mfpdev-cli.tgz
+24 verbose headers { 'content-type': 'application/json',
+24 verbose headers   'cache-control': 'max-age=0',
+24 verbose headers   'content-length': '71',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Wed, 11 May 2016 08:33:35 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1462955613.463665,VS0,VE2026' }
+25 info retry will retry, error on last attempt: Error: Registry returned 500 for GET on https://registry.npmjs.org/mfpdev-cli.tgz
+26 info attempt registry request try #2 at 2:03:45 PM
+27 http request GET https://registry.npmjs.org/mfpdev-cli.tgz
+28 http 500 https://registry.npmjs.org/mfpdev-cli.tgz
+29 verbose headers { 'content-type': 'application/json',
+29 verbose headers   'cache-control': 'max-age=0',
+29 verbose headers   'content-length': '71',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Wed, 11 May 2016 08:33:47 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1462955625.843131,VS0,VE1336' }
+30 info retry will retry, error on last attempt: Error: Registry returned 500 for GET on https://registry.npmjs.org/mfpdev-cli.tgz
+31 info attempt registry request try #3 at 2:04:46 PM
+32 http request GET https://registry.npmjs.org/mfpdev-cli.tgz
+33 http 500 https://registry.npmjs.org/mfpdev-cli.tgz
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=0',
+34 verbose headers   'content-length': '71',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Wed, 11 May 2016 08:34:48 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1462955687.501069,VS0,VE765' }
+35 silly get cb [ 500,
+35 silly get   { 'content-type': 'application/json',
+35 silly get     'cache-control': 'max-age=0',
+35 silly get     'content-length': '71',
+35 silly get     'accept-ranges': 'bytes',
+35 silly get     date: 'Wed, 11 May 2016 08:34:48 GMT',
+35 silly get     via: '1.1 varnish',
+35 silly get     connection: 'keep-alive',
+35 silly get     'x-served-by': 'cache-sin6926-SIN',
+35 silly get     'x-cache': 'MISS',
+35 silly get     'x-cache-hits': '0',
+35 silly get     'x-timer': 'S1462955687.501069,VS0,VE765' } ]
+36 verbose stack Error: Registry returned 500 for GET on https://registry.npmjs.org/mfpdev-cli.tgz
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+37 verbose statusCode 500
+38 verbose pkgid mfpdev-cli.tgz
+39 verbose cwd /Users/sysarcinfomatix/Documents/ionicWorkspace/testIBM
+40 error Darwin 13.4.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "mfpdev-cli.tgz"
+42 error node v4.4.4
+43 error npm  v2.15.1
+44 error code E500
+45 error Registry returned 500 for GET on https://registry.npmjs.org/mfpdev-cli.tgz
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
